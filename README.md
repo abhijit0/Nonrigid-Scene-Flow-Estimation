@@ -15,7 +15,7 @@ moving objects e.g human movements.
 
 ## Optical Flow v/s Scene Flow 
 |Optical Flow | Scene Flow |
-|--------------------------------------------------------------------------------------------------------------|---------------------------------------|
+|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 |Optical flow is a method to estimate the apparent motion of scene points from a sequence of images in 2d plane. | Scene Flow shows the threedimensional displacement vector between two frames in stereo setting|
 
 |![image](https://user-images.githubusercontent.com/17523822/214089551-13898183-bc25-4247-80c8-1466d75396b9.png)| 

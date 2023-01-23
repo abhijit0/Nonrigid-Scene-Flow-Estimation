@@ -14,9 +14,9 @@ incorporates depth information where optical flow does not.
 moving objects e.g human movements.
 
 ## Optical Flow v/s Scene Flow 
-> Optical flow 
+### Optical flow 
 ![image](https://user-images.githubusercontent.com/17523822/214089551-13898183-bc25-4247-80c8-1466d75396b9.png)
-> Scene Flow 
+###Scene Flow 
 ![image](https://user-images.githubusercontent.com/17523822/214090702-c0d47948-efed-4b87-8792-df8a9ec0ed9e.png) |
 |Optical Flow | Scene Flow |
 |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------|

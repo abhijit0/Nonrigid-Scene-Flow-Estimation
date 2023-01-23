@@ -24,7 +24,7 @@ moving objects e.g human movements.
 |The flow vector is (u, v) representing flow in x and y directions respectively | Scene Flow between a pair of stereo images at time t and t+1 is given as (u, v, d0, Δd) where (u,v) is optical flow d0, Δd represent disparity info, capturing depth information |
 | Challenges: Occlusions,Discontinuity in motion, Large motions | | 
 
-# RAFT : Recurrent All-Pairs Field Transforms for Optical Flow
+## RAFT : Recurrent All-Pairs Field Transforms for Optical Flow
 ![image](https://user-images.githubusercontent.com/17523822/214092454-9343c1e9-3cc4-4f6e-bab5-ebcda5672a48.png)
 
 - Deep Learning based optical flow estimation
@@ -35,7 +35,7 @@ moving objects e.g human movements.
   - Correlation Maps – For estimating flow at different resolutions
   - Iterative update operator – GRU unit which produces flow update at each step
 
-# Raft for Scene Flow (SF)
+## Raft for Scene Flow (SF)
 ![image](https://user-images.githubusercontent.com/17523822/214093066-083660a9-4970-449c-9ddb-603ffb74fbd9.png)
 
 - Key Modifications in network:
@@ -45,3 +45,11 @@ moving objects e.g human movements.
   - Update operator:
     - Accepts all 3 correlation maps For indexing and estimating SF
 
+## Datasets and Training
+- Datasets :
+  - Flying Things 3d
+  - Kitti 2015
+-Loss Function: Sequence Loss : ℒ = σ𝑖=1
+𝑁 Υ𝑁−𝑖 |𝑆𝑓𝑔𝑡 − 𝑠𝑓𝑖 |
+1
+1

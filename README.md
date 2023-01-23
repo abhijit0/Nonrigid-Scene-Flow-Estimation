@@ -34,3 +34,14 @@ moving objects e.g human movements.
   - Feature Extractor (CNN) – For generating feature maps of target images
   - Correlation Maps – For estimating flow at different resolutions
   - Iterative update operator – GRU unit which produces flow update at each step
+
+# Raft for Scene Flow (SF)
+![image](https://user-images.githubusercontent.com/17523822/214093066-083660a9-4970-449c-9ddb-603ffb74fbd9.png)
+
+- Key Modifications in network:
+  - 4 Images as inputs instead of 2
+  - 5 Feature Maps
+  - 3 correlations maps for each image pairs
+  - Update operator:
+    - Accepts all 3 correlation maps For indexing and estimating SF
+

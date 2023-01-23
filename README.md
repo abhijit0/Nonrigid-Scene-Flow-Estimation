@@ -23,3 +23,14 @@ moving objects e.g human movements.
 |Optical flow is a method to estimate the apparent motion of scene points from a sequence of images in 2d plane. | Scene Flow shows the threedimensional displacement vector between two frames in stereo setting|
 |The flow vector is (u, v) representing flow in x and y directions respectively | Scene Flow between a pair of stereo images at time t and t+1 is given as (u, v, d0, Δd) where (u,v) is optical flow d0, Δd represent disparity info, capturing depth information |
 | Challenges: Occlusions,Discontinuity in motion, Large motions | | 
+
+# RAFT : Recurrent All-Pairs Field Transforms for Optical Flow
+![image](https://user-images.githubusercontent.com/17523822/214092454-9343c1e9-3cc4-4f6e-bab5-ebcda5672a48.png)
+
+- Deep Learning based optical flow estimation
+- I/O : Images at t, t+1 ; O/P : Optical Flow b/w images t, t+1
+- Reference Image t: Drives the iterative update module.
+- Main Components :
+  - Feature Extractor (CNN) – For generating feature maps of target images
+  - Correlation Maps – For estimating flow at different resolutions
+  - Iterative update operator – GRU unit which produces flow update at each step

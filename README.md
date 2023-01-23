@@ -20,3 +20,4 @@ moving objects e.g human movements.
 
 |![image](https://user-images.githubusercontent.com/17523822/214089551-13898183-bc25-4247-80c8-1466d75396b9.png)| 
 ![image](https://user-images.githubusercontent.com/17523822/214090702-c0d47948-efed-4b87-8792-df8a9ec0ed9e.png) |
+|The flow vector is (u, v) representing flow in x and y directions respectively | Scene Flow between a pair of stereo images at time t and t+1 is given as (u, v, d0, Δd)|
